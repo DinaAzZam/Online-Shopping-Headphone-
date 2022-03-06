@@ -1,0 +1,640 @@
+/* Start Global Rules */
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;    
+    padding: 0;
+    margin: 0;
+    outline-style: none;       
+}
+html{
+    font-size: 14px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container{
+    margin: 0 auto;
+    width: 95%;
+}
+/* End Global Rules */
+
+/* Start Components */
+
+/* Start Header Section */
+#section1{
+    background: url('../images/banner.jpg') no-repeat -182px -79px/cover;
+    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+}
+#section1 header{
+    background-color: #000;
+}
+#section1 header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#section1 header h2{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: #FFBC00;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    font-style: italic;
+    font-family: 'Mandali', sans-serif;
+    font-size: 1.4rem
+}
+#section1 header h2 img{
+    width: 40px;
+    margin-right: 15px;
+}
+#section1 header h2 span{
+    font-size: 1.87rem;
+    font-style: normal;
+}
+#section1 header h2 span:last-of-type{
+    margin-left: 8px
+}
+#section1 header label i{
+    color: #FFF;
+    font-size: 24px;
+    cursor: pointer;
+}
+#section1 header input{
+    display: none
+}
+#section1 header input+nav{
+    display: none;
+    width: 100%;
+}
+#section1 input:checked+nav{
+    display: block;
+    border: thin solid #373737;
+    position: relative;
+}
+#section1 input:checked+nav::before{
+    content: "";
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent #373737 transparent;
+    position: absolute;
+    right: 0;
+    top: -20px
+}
+#section1 input:checked+nav a{
+	text-decoration: none;
+	color: #FFF;
+	padding: 10px;
+	display: block;
+    font-size: 1.1rem;
+    text-align: center;
+    background-color: #000;
+    border-bottom: thin solid #373737;
+    transition: background-color 0.5s ease;
+}
+#section1 input:checked+nav a:hover{
+	background-color: #FFBC00;
+}
+#section1 .introduction{
+    margin-top: 150px
+}
+#section1 .introduction h2{
+    font-size: 0.97rem;
+    color: #333;
+}
+#section1 .introduction h1{
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-size: 2.31rem;
+}
+#section1 .introduction h1 span{
+    color: #CD8383;
+}
+#section1 .introduction a{
+    text-decoration: none;
+    color: #373737;
+    background-color: #FFF;
+    padding: 10px 25px;
+    border-radius: 30px;
+}
+#section1 .headphone{
+    color: #FFF;
+    background-color: #000;
+    margin-top: 190px;
+    padding-bottom: 30px;
+    padding-top: 20px;
+    text-align: center;
+}
+#section1 .headphone .container{
+    padding-bottom: 30px;
+}
+#section1 .headphone h2{
+    color: #FBC86A;
+    margin: 15px 0;
+    font-size: 2.6rem;
+    font-weight: 350;
+}
+#section1 .headphone p{
+    line-height: 1.6;
+    font-size: 1.05rem;
+}
+#section1 .headphone p span{
+    display: none
+}
+/* End Header Section */
+
+/* Start Store Section */
+#store{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 80px;
+}
+#store header{
+    background: url('../images/sep.png');
+}
+#store header h2{
+    color: #FFF;
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 30px 0
+}
+#store .container h3{
+    margin-bottom: 15px;
+    margin-top: 40px;
+    font-size: 2rem;
+    font-weight: 490
+}
+#store article{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#store article figure{
+    margin-bottom: 15px;
+    background-color: #000;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+#store article figure .overlay{
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #FFF;
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    padding: 8px;
+    border-radius: 10px;
+}
+#store article figure img{
+    width: 100%;
+}
+#store article figure h4{
+    color: #FFBC00;
+    font-size: 1.3rem;
+    margin: 5px 10px 
+}
+#store article figure p{
+    margin: 0 10px;
+    color: #FFF;
+    line-height: 1.4;
+    text-align: justify;
+    font-size: 0.97rem;
+    color: #DDD;
+    margin-bottom: 20px;
+}
+/* End Store Section */
+
+/* Start Gallery Section */
+#gallery{
+    display: flex;
+    flex-direction: column;
+    background-color: #000;
+    padding-top: 60px;
+}
+#gallery h2{
+    color: #FFBC00;
+    font-size: 2.1rem;
+    text-align: center;
+    margin-bottom: 40px;
+}
+#gallery .container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+}
+#gallery figure{
+    margin-bottom: 12px;
+    width: 100%;
+}
+#gallery figure img{
+    width: 100%;
+}
+#gallery footer{
+    display: flex;
+    justify-items: center;
+    justify-content: space-evenly;
+    align-items: center;
+    background: url('../images/sep.png');
+    padding-top: 30px;
+    padding-bottom: 20px;
+    flex-direction: column;
+}
+#gallery footer .heading h3{
+    color: #FFF;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 0.98rem;
+}
+#gallery footer .heading h2{
+    color: #FFF;
+    margin: 15px 0
+}
+#gallery footer a{
+    text-decoration: none;
+    color: #000;
+    background-color: #FFF;
+    border-radius: 20px;
+    border: 1px solid #FFF;
+    padding: 10px 20px;
+    font-weight: 500
+}
+/* End Gallery Section */
+
+/* Start Achievements Section */
+#achievements{
+    background-color: #000;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    color: #FFF;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center
+}
+#achievements h2{
+    margin-bottom: 20px;
+    font-size: 2.36rem; 
+    font-weight: 300  
+}
+#achievements p{
+    line-height: 1.6;
+    font-size: 1.08rem
+}
+#achievements figure{
+    width: 100%;
+    margin: 30px 0
+}
+#achievements figure img{
+    width: 100%
+}
+#achievements article{
+    margin-bottom: 50px;
+}
+#achievements article h2{
+    font-weight: 600;
+    font-size: 3rem
+}
+#achievements article h3{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+#achievements article h4{
+    font-weight: 550;
+    margin-top: 10px
+}
+/* End Achievements Section */
+
+/* Start Contact Section */
+#contact{
+    background: linear-gradient(rgba(83, 152, 175, 0.5), rgba(83, 152, 175, 0.5)) , url('../images/contactus.jpg') no-repeat center center/cover;
+}
+#contact .container{
+    padding-bottom: 10px
+}
+#contact h2{
+    color: #FFBC00;
+    font-size: 2.4rem;
+    text-align: center;
+    margin-bottom: 15px;
+    padding-top: 30px
+}
+#contact p{
+    line-height: 1.6;
+    text-align: center;
+    font-size: 1.08rem;
+    color: #FFF
+}
+#contact form{
+    border: 1px solid #FFBC00;
+    box-shadow: 0 0 15px #FFBC00;
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    margin: 40px auto 45px;
+    width: 80%
+}
+#contact form input{
+    padding: 12px 15px;
+    margin-bottom: 18px;
+    border: 1px solid #FFF;
+    font-size: 1.03rem;
+}
+#contact form input[type="submit"]{
+    background-color: #FFBC00;
+    text-transform: uppercase;;
+    border-color: #FFBC00;
+    font-size: 1.035rem;
+}
+#contact #footer{
+    background-color: #FFBC00;
+    height: 10px
+}
+/* End Contact Section */
+
+/* Start Footer Section */
+footer{
+    background-color: #000;
+    color: #FFF;
+    padding: 40px 0 10px;
+}
+footer article{
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+}
+footer article h4{
+    margin-bottom: 8px;
+    font-weight: 500;
+    font-size: 1.1rem
+}
+footer article a{
+    text-decoration: none;
+    color: #FFF
+}
+footer article a i{
+    margin-right: 10px
+}
+footer article a img{
+    width: 50px;
+    margin-right: 8px
+}
+footer article input{
+    padding: 8px 0;
+    border-color: transparent;
+    background-color: transparent;
+    border-bottom: 1px solid #CCC;
+    margin: 18px 0;
+    width: 300px;
+    font-size: 1.1rem;
+    color: #FFF
+}
+footer article input + a{
+    background-color: #FFF;
+    border-radius: 20px;
+    border: 1px solid #FFF;
+    padding: 8px 15px;
+    color: #000;
+    font-size: 1.03rem;
+    width: 100px;
+    text-align: center
+}
+/* End Footer Section */
+
+/* End Components */
+
+/* Start Media Queries */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+    .container{
+        width: 520px;
+    }
+}
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+    .container{
+        width: 720px
+    }
+    /* Start Header Section */
+    #section1{
+        background-position: 0 -70px;
+    }
+    #section1 input:checked + nav {
+        display: flex;
+        flex-wrap: wrap;
+        border-bottom: thin solid #373737;
+    }
+    #section1 input + nav a:first-child,
+    #section1 input + nav a:nth-child(2),
+    #section1 input + nav a:nth-child(3),
+    #section1 input + nav a:nth-child(4){
+        width: 50%;
+    }
+    #section1 input + nav a:nth-child(5),
+    #section1 input + nav a:nth-child(6),
+    #section1 input + nav a:nth-child(7){
+        width: 28%;
+        margin-left: 30px;
+        border-bottom: hidden;
+    }
+    /* End Header Section */
+
+    /* Start Store Section */
+    #store article figure{
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+    #store article figure img {
+        width: 50%
+    }
+    /* End Store Section */
+
+    /* Start Gallery Section */
+    #gallery figure{
+        width: 49%
+    }
+    #gallery footer{
+        flex-direction: row;
+    }
+    /* End Gallery Section */
+
+    /* Start Achivements Section */
+    #achievements main{
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 20px
+    }
+    #achievements main article{
+        width: 50%
+    }
+    /* End Achievements Section */
+
+    /* Start Footer Section */
+    footer .container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    footer article{
+        width: 48%
+    }
+    /* End Footer Section */
+}
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .container{
+        width: 930px;
+    }
+    /* Start Header Section */
+    #section1{
+        background: url('../images/banner.jpg') no-repeat center -103px/cover;
+    }
+    #section1 label {
+        display: none;
+    }
+    #section1 header input+nav{
+        display: block;
+        width: auto
+    }
+    #section1 input:checked + nav {
+        display: inline-block;
+        flex-wrap: nowrap;
+        border-bottom: none;
+    }
+    #section1 input:checked+nav::before{
+        content: none;
+    }
+    #section1 input + nav a {
+        display: inline;
+        font-size: 1.15rem;
+        color:#FFF;
+        background-color: transparent;
+        border-bottom: none;
+        transition: color 0.5s ease;
+        text-decoration: none;
+        padding: 20px;
+    }
+    #section1 input + nav a:hover{
+        color: #FFBC00;
+    }
+    #section1 input + nav .icon{
+        margin-right: 8px;
+    }
+    #section1 input + nav a:first-child,
+    #section1 input + nav a:nth-child(2),
+    #section1 input + nav a:nth-child(3),
+    #section1 input + nav a:nth-child(4),
+    #section1 input + nav a:nth-child(5),
+    #section1 input + nav a:nth-child(6),
+    #section1 input + nav a:nth-child(7){
+        width: auto;
+        margin-left: 0
+    }
+    #section1 input + nav a:nth-child(5),
+    #section1 input + nav a:nth-child(6),
+    #section1 input + nav a:nth-child(7){
+        border-radius: 50%;
+        padding: 5px 8px;
+        border: 1px solid #FFF
+    }
+    #section1 .introduction h2 span{
+        text-transform: uppercase;
+    }
+    #section1 .introduction h1{
+        margin-top: auto;
+        font-size: 2.88rem;
+        width: 40px
+    }
+    #section1 .headphone {
+        text-align: left;
+    }
+    #section1 .headphone .container{
+        padding-bottom: 10px;
+    }
+    #section1 .headphone p {
+        text-align: justify;
+    }
+    #section1 .headphone p span{
+        display: inline
+    }
+    /* End Header Section */
+
+    /* Start Store Section */
+    #store article figure{
+        width: 32%;
+        flex-direction: column;
+    }
+    #store article figure img {
+        width: 100%
+    }
+    /* End Store Section */
+
+    /* Start Gallery Section */
+    #gallery figure{
+        width: 24%;
+    }
+    /* End Gallery Section*/
+
+    /* Start Achievements Section */
+    #achievements{
+        text-align: left;
+    }
+    #achievements .content{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        margin-top: 15px
+    }
+    #achievements figure{
+        width: 50%;
+        margin-bottom: 0;
+        margin-top: 20px
+    }
+    #achievements main{
+        flex-direction: row;
+        width: 44%;
+        justify-content: space-between;
+    }
+    #achievements main article{
+        width: 48%;
+    }
+    /* End Achievements Section */
+
+    /* Start Contact Section */
+    #contact .container{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    #contact article{
+        width: 60%
+    }
+    #contact h2, #contact p{
+        text-align: left;
+    }
+    #contact form{
+        width: 28%;
+    }
+    /* End Contact Section */
+
+    /* Start footer Section */
+    footer article{
+        width: 25%
+    }
+    footer article:last-of-type{
+        width: 35%;
+    }
+    /* End Footer Section */
+}
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+    .container{
+        width: 1140px;
+    }
+}
+/* End Media Queries */
